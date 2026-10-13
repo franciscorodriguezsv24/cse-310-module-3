@@ -1,0 +1,298 @@
+{
+  "restaurantName": "Kumo Sushi (sample)",
+  "currency": "USD",
+  "branches": [
+    {
+      "id": "downtown",
+      "name": "Downtown",
+      "address": "120 S Main St, Salt Lake City, UT",
+      "whatsapp": "+50371759420",
+      "latitude": 40.7661,
+      "longitude": -111.891,
+      "hours": "11:00 – 22:00"
+    },
+    {
+      "id": "sugarhouse",
+      "name": "Sugar House",
+      "address": "2100 S Highland Dr, Salt Lake City, UT",
+      "whatsapp": "15555550102",
+      "latitude": 40.7253,
+      "longitude": -111.8466,
+      "hours": "12:00 – 21:30"
+    },
+    {
+      "id": "provo",
+      "name": "Provo",
+      "address": "450 N University Ave, Provo, UT",
+      "whatsapp": "15555550103",
+      "latitude": 40.2393,
+      "longitude": -111.6583,
+      "hours": "11:30 – 21:00"
+    }
+  ],
+  "categories": [
+    { "id": "rolls", "name": "Rolls" },
+    { "id": "nigiri", "name": "Nigiri" },
+    { "id": "bowls", "name": "Bowls" },
+    { "id": "sides", "name": "Sides" },
+    { "id": "drinks", "name": "Drinks" }
+  ],
+  "products": [
+    {
+      "id": "california-roll",
+      "categoryId": "rolls",
+      "name": "California Roll",
+      "description": "Crab, avocado and cucumber, rolled inside-out with sesame.",
+      "emoji": "🍣",
+      "basePrice": 850,
+      "availableAt": ["downtown", "sugarhouse", "provo"],
+      "optionGroups": [
+        {
+          "id": "size",
+          "name": "Size",
+          "type": "single",
+          "choices": [
+            { "id": "8pc", "name": "8 pieces", "priceDelta": 0, "default": true },
+            { "id": "12pc", "name": "12 pieces", "priceDelta": 400 }
+          ]
+        },
+        {
+          "id": "extras",
+          "name": "Extras",
+          "type": "multiple",
+          "max": 3,
+          "choices": [
+            { "id": "extra-avocado", "name": "Extra avocado", "priceDelta": 150 },
+            { "id": "spicy-mayo", "name": "Spicy mayo", "priceDelta": 75 },
+            { "id": "eel-sauce", "name": "Eel sauce", "priceDelta": 75 },
+            { "id": "tempura-flakes", "name": "Tempura flakes", "priceDelta": 100 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon-roll",
+      "categoryId": "rolls",
+      "name": "Dragon Roll",
+      "description": "Shrimp tempura and cucumber topped with avocado and eel sauce.",
+      "emoji": "🐉",
+      "basePrice": 1350,
+      "availableAt": ["downtown", "sugarhouse"],
+      "optionGroups": [
+        {
+          "id": "size",
+          "name": "Size",
+          "type": "single",
+          "choices": [
+            { "id": "8pc", "name": "8 pieces", "priceDelta": 0, "default": true },
+            { "id": "12pc", "name": "12 pieces", "priceDelta": 550 }
+          ]
+        },
+        {
+          "id": "extras",
+          "name": "Extras",
+          "type": "multiple",
+          "max": 2,
+          "choices": [
+            { "id": "spicy-mayo", "name": "Spicy mayo", "priceDelta": 75 },
+            { "id": "cream-cheese", "name": "Cream cheese", "priceDelta": 125 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spicy-tuna-roll",
+      "categoryId": "rolls",
+      "name": "Spicy Tuna Roll",
+      "description": "Chopped tuna with chili oil, scallion and cucumber.",
+      "emoji": "🌶️",
+      "basePrice": 1050,
+      "availableAt": ["downtown", "sugarhouse", "provo"],
+      "optionGroups": [
+        {
+          "id": "heat",
+          "name": "Heat level",
+          "type": "single",
+          "choices": [
+            { "id": "mild", "name": "Mild", "priceDelta": 0 },
+            { "id": "medium", "name": "Medium", "priceDelta": 0, "default": true },
+            { "id": "hot", "name": "Hot", "priceDelta": 0 }
+          ]
+        },
+        {
+          "id": "wrap",
+          "name": "Wrap",
+          "type": "single",
+          "choices": [
+            { "id": "nori", "name": "Nori", "priceDelta": 0, "default": true },
+            { "id": "soy-paper", "name": "Soy paper", "priceDelta": 100 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rainbow-roll",
+      "categoryId": "rolls",
+      "name": "Rainbow Roll",
+      "description": "California roll topped with tuna, salmon, yellowtail and avocado.",
+      "emoji": "🌈",
+      "basePrice": 1500,
+      "availableAt": ["downtown", "provo"],
+      "optionGroups": []
+    },
+    {
+      "id": "salmon-nigiri",
+      "categoryId": "nigiri",
+      "name": "Salmon Nigiri",
+      "description": "Two pieces of fresh salmon over seasoned rice.",
+      "emoji": "🍙",
+      "basePrice": 650,
+      "availableAt": ["downtown", "sugarhouse", "provo"],
+      "optionGroups": [
+        {
+          "id": "style",
+          "name": "Style",
+          "type": "single",
+          "choices": [
+            { "id": "classic", "name": "Classic", "priceDelta": 0, "default": true },
+            { "id": "torched", "name": "Torched (aburi)", "priceDelta": 100 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tuna-nigiri",
+      "categoryId": "nigiri",
+      "name": "Tuna Nigiri",
+      "description": "Two pieces of bluefin tuna over seasoned rice.",
+      "emoji": "🍙",
+      "basePrice": 750,
+      "availableAt": ["downtown", "sugarhouse"],
+      "optionGroups": []
+    },
+    {
+      "id": "poke-bowl",
+      "categoryId": "bowls",
+      "name": "Poke Bowl",
+      "description": "Sushi rice, edamame, cucumber, seaweed salad and your choice of protein.",
+      "emoji": "🥗",
+      "basePrice": 1400,
+      "availableAt": ["downtown", "sugarhouse", "provo"],
+      "optionGroups": [
+        {
+          "id": "protein",
+          "name": "Protein",
+          "type": "single",
+          "choices": [
+            { "id": "salmon", "name": "Salmon", "priceDelta": 0, "default": true },
+            { "id": "tuna", "name": "Tuna", "priceDelta": 150 },
+            { "id": "tofu", "name": "Tofu", "priceDelta": -100 }
+          ]
+        },
+        {
+          "id": "base",
+          "name": "Base",
+          "type": "single",
+          "choices": [
+            { "id": "white-rice", "name": "White rice", "priceDelta": 0, "default": true },
+            { "id": "brown-rice", "name": "Brown rice", "priceDelta": 0 },
+            { "id": "greens", "name": "Mixed greens", "priceDelta": 0 }
+          ]
+        },
+        {
+          "id": "toppings",
+          "name": "Toppings",
+          "type": "multiple",
+          "max": 3,
+          "choices": [
+            { "id": "mango", "name": "Mango", "priceDelta": 100 },
+            { "id": "masago", "name": "Masago", "priceDelta": 150 },
+            { "id": "crispy-onion", "name": "Crispy onion", "priceDelta": 50 },
+            { "id": "jalapeno", "name": "Jalapeño", "priceDelta": 50 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "edamame",
+      "categoryId": "sides",
+      "name": "Edamame",
+      "description": "Steamed soybeans with sea salt.",
+      "emoji": "🫛",
+      "basePrice": 450,
+      "availableAt": ["downtown", "sugarhouse", "provo"],
+      "optionGroups": [
+        {
+          "id": "seasoning",
+          "name": "Seasoning",
+          "type": "single",
+          "choices": [
+            { "id": "sea-salt", "name": "Sea salt", "priceDelta": 0, "default": true },
+            { "id": "garlic-chili", "name": "Garlic chili", "priceDelta": 75 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "miso-soup",
+      "categoryId": "sides",
+      "name": "Miso Soup",
+      "description": "Dashi broth with tofu, wakame and scallion.",
+      "emoji": "🍜",
+      "basePrice": 350,
+      "availableAt": ["downtown", "sugarhouse", "provo"],
+      "optionGroups": []
+    },
+    {
+      "id": "gyoza",
+      "categoryId": "sides",
+      "name": "Pork Gyoza",
+      "description": "Six pan-fried dumplings with ponzu dipping sauce.",
+      "emoji": "🥟",
+      "basePrice": 700,
+      "availableAt": ["sugarhouse", "provo"],
+      "optionGroups": []
+    },
+    {
+      "id": "green-tea",
+      "categoryId": "drinks",
+      "name": "Iced Green Tea",
+      "description": "Unsweetened, brewed in-house.",
+      "emoji": "🍵",
+      "basePrice": 300,
+      "availableAt": ["downtown", "sugarhouse", "provo"],
+      "optionGroups": [
+        {
+          "id": "size",
+          "name": "Size",
+          "type": "single",
+          "choices": [
+            { "id": "regular", "name": "Regular", "priceDelta": 0, "default": true },
+            { "id": "large", "name": "Large", "priceDelta": 100 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ramune",
+      "categoryId": "drinks",
+      "name": "Ramune Soda",
+      "description": "Japanese marble soda.",
+      "emoji": "🥤",
+      "basePrice": 400,
+      "availableAt": ["downtown", "provo"],
+      "optionGroups": [
+        {
+          "id": "flavor",
+          "name": "Flavor",
+          "type": "single",
+          "choices": [
+            { "id": "original", "name": "Original", "priceDelta": 0, "default": true },
+            { "id": "strawberry", "name": "Strawberry", "priceDelta": 0 },
+            { "id": "melon", "name": "Melon", "priceDelta": 0 }
+          ]
+        }
+      ]
+    }
+  ]
+}
