@@ -9,3 +9,4 @@ service-account*.json
 firebase-debug.log
 firestore-debug.log
 ui-debug.log
+VIDEO_SCRIPT.md
