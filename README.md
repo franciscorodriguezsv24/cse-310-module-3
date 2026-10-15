@@ -17,7 +17,7 @@ Orders still go through WhatsApp. Firestore holds only catalog and branch data, 
 information. This repository uses a sample catalog and a demo Firebase project, not the business's real data or
 keys.
 
-[Software Demo Video](https://youtu.be/REPLACE_ME)
+[Software Demo Video](https://www.loom.com/share/4db1b5046d1e467288a2cd698b61b8c8)
 
 # Cloud Database
 
